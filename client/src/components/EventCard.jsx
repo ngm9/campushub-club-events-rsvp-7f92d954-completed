@@ -1,9 +1,7 @@
 import React from 'react';
-
 export default function EventCard({ event, onRsvp }) {
   const seatsLeft = event.capacity - event.attendees;
   const isFull = seatsLeft <= 0;
-
   return (
     <div className="event-card">
       <h2>{event.title}</h2>
